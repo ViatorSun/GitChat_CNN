@@ -1,7 +1,7 @@
 
 #  !/usr/bin/env  python
 #  -*- coding:utf-8 -*-
-# @Time   :  2018.8
+# @Time   :  2018.
 # @Author :  绿色羽毛
 # @Email  :  lvseyumao@foxmail.com
 # @GitHub ： https://github.com/ViatorSun
