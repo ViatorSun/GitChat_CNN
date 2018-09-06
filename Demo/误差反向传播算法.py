@@ -6,7 +6,7 @@
 # @Email  :  lvseyumao@foxmail.com
 # @GitHub ： https://github.com/ViatorSun
 # @Blog   :  https://blog.csdn.net/ViatorSun
-# @Note   :  BP网络  数字识别
+# @Note   :  误差反向传播算法实现数字识别
 
 import numpy as np
 from sklearn.datasets import load_digits
@@ -65,19 +65,24 @@ class NeuralNetwork:
         L2 = sigmoid(np.dot(L1,self.W))#输出层输出
         return L2
 
-digits = load_digits()#载入数据
+# 载入数据
+digits = load_digits()
 X = digits.data#数据
 y = digits.target#标签
-#输入数据归一化
+
+# 输入数据归一化
 X -= X.min()
 X /= X.max()
 
-nm = NeuralNetwork([64,100,10])#创建网络
+# 创建网络
+nm = NeuralNetwork([64,100,10]
 
-X_train,X_test,y_train,y_test = train_test_split(X,y) #分割数据1/4为测试数据，3/4为训练数据
+# 分割数据1/4为测试数据，3/4为训练数据
+X_train,X_test,y_train,y_test = train_test_split(X,y)
 
-labels_train = LabelBinarizer().fit_transform(y_train)#标签二值化     0,8,6   0->1000000000  3->0001000000
-labels_test = LabelBinarizer().fit_transform(y_test)#标签二值化
+# 标签二值化
+labels_train = LabelBinarizer().fit_transform(y_train)
+labels_test = LabelBinarizer().fit_transform(y_test)
 
 print('start')
 
