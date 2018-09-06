@@ -22,7 +22,9 @@ handwriting.py      为手写体识别算法
 
 
 testSet.txt         存放样本数据
+
 datingTestSet.txt   
+
 datingTestSet2.txt  
 
 
