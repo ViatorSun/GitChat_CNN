@@ -11,7 +11,7 @@ import regression
 from numpy import *
 import matplotlib.pyplot as plt
 
-xArr , yArr = regression.loadDataSet("ex0.txt")
+xArr , yArr = regression.loadDataSet("data.txt")
 
 ws = regression.standRegres(xArr,yArr)
 
