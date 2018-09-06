@@ -11,7 +11,7 @@ from numpy import *
 
 # 加载数据集，返回数据点与标签
 def loadDataSet(fileName):
-    numFeat = len(open(fileName).readline().split('\t')) - 1  # 获取数据样本的个数
+    numFeat = len(open(fileName).readline().split('\t')) - 1  
     dataMat = [];
     labelMat = []
     fr = open(fileName)
